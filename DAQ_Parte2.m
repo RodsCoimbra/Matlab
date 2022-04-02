@@ -7,17 +7,17 @@ fs = 20000;                  %Sample frequency (samples per unit time or space)
 
 
 %%  Aquisição dos dados   
-%dq = daq("ni");             %The daq command creates a DataAcquisition object.
+dq = daq("ni");             %The daq command creates a DataAcquisition object.
 
 %By default, run at a scan rate of 1000 scans per second. To acquire at a higher rate, change the Rate property.
 dq.Rate = fs;               %Define a frequência de amostragem
 
-%ch = addinput(dq,"Dev1", "ai0","Voltage"); %The addinput command attaches an input channel to the DataAcquisition.
+ch = addinput(dq,"Dev2", "ai0","Voltage"); %The addinput command attaches an input channel to the DataAcquisition.
 
 %The read command starts the acquisition and returns the results as a timetable.
-%data = read(dq, seconds(1)); %Sampled data
+data = read(dq, seconds(1)); %Sampled data
 
-%sn = data.Dev1_ai0;         %Sampled Signal
+sn = data.Dev1_ai0;         %Sampled Signal
 
 %% Variáveis de intresse 
 n = 1000;                    %Number of samples
