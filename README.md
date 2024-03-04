@@ -1,2 +1,2 @@
 ## Lab classes that used Matlab
-Some of the courses' lab classes where we developed code in Matlab to solve some problems, but the course itself didn't have a project to have its own repository.
+This repository contains code developed in MATLAB during various lab classes across different courses. Although each course lacked a specific project to have its own repository, this collection serves as a compilation of the practical work undertaken during these classes.
